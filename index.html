@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>فرشته‌ها | کمک به حیوانات بی‌پناه</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #081426;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #0d1d34;
+      border-bottom: 1px solid #263954;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #9be52b;
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(8,20,38,.75), rgba(8,20,38,.95)),
+        url("https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      color: #dce5ef;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      background: #9be52b;
+      color: #081426;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .title span {
+      color: #9be52b;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #0d1d34;
+      border: 1px solid #263954;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #9be52b;
+      margin-bottom: 8px;
+    }
+
+    .progress {
+      height: 9px;
+      background: #263954;
+      border-radius: 20px;
+      margin: 15px 0;
+      overflow: hidden;
+    }
+
+    .progress div {
+      height: 100%;
+      background: #9be52b;
+      width: 65%;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      text-align: center;
+    }
+
+    .stat {
+      background: #0d1d34;
+      padding: 25px 10px;
+      border-radius: 15px;
+    }
+
+    .stat strong {
+      display: block;
+      color: #9be52b;
+      font-size: 27px;
+    }
+
+    .about {
+      background: #0d1d34;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #050d19;
+      color: #9aa9ba;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🪽 فرشته‌ها</div>
+</header>
+
+<section class="hero">
+  <h1>گاهی یک فرشته، چهار پا دارد.</h1>
+
+  <p>
+    ما کنار حیواناتی هستیم که صدایی برای درخواست کمک ندارند.
+    با کمک شما می‌توانیم غذا، درمان و امنیت بیشتری برایشان فراهم کنیم.
+  </p>
+
+  <a href="#animals" class="btn">❤️ کمک به یک فرشته</a>
+</section>
+
+<section>
+  <h2 class="title">با کمک شما چه اتفاقی می‌افتد؟</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>۰</strong>
+      حیوان نجات‌یافته
+    </div>
+
+    <div class="stat">
+      <strong>€۰</strong>
+      کمک جمع‌آوری‌شده
+    </div>
+
+    <div class="stat">
+      <strong>۰</strong>
+      درمان انجام‌شده
+    </div>
+  </div>
+</section>
+
+<section id="animals">
+
+  <h2 class="title">🐾 <span>فرشته‌های</span> نیازمند کمک</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80">
+
+      <div class="card-content">
+        <h3>لئو 🐕</h3>
+
+        <p>
+          لئو برای درمان و ادامه زندگی به کمک شما نیاز دارد.
+        </p>
+
+        <div class="progress">
+          <div></div>
+        </div>
+
+        <p>هدف: €500 | جمع‌شده: €325</p>
+
+        <a href="#donate" class="btn">کمک به لئو ❤️</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=800&q=80">
+
+      <div class="card-content">
+
+        <h3>میلو 🐈</h3>
+
+        <p>
+          میلو برای غذا و مراقبت پزشکی به حمایت نیاز دارد.
+        </p>
+
+        <div class="progress">
+          <div style="width:40%"></div>
+        </div>
+
+        <p>هدف: €300 | جمع‌شده: €120</p>
+
+        <a href="#donate" class="btn">کمک به میلو ❤️</a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+
+  <div class="about">
+
+    <h2 class="title">💚 چرا فرشته‌ها؟</h2>
+
+    <p>
+      هدف ما ایجاد یک مسیر ساده و شفاف برای کمک به حیوانات بی‌پناه است.
+      هر کمک باید قابل پیگیری باشد و گزارش هزینه‌ها در اختیار حامیان قرار بگیرد.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="donate">
+
+  <h2 class="title">❤️ همین حالا <span>کمک کن</span></h2>
+
+  <div class="about">
+
+    <p>
+      در نسخه فعلی این بخش نمایشی است.
+      بعداً سیستم پرداخت واقعی را به آن متصل می‌کنیم.
+    </p>
+
+    <a href="#" class="btn">
+      💚 مبلغ دلخواه من
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  🪽 فرشته‌ها | برای کسانی که صدایشان شنیده نمی‌شود
+
+  <br><br>
+
+  © 2026 Angels Charity
+
+</footer>
+
+</body>
+</html>
