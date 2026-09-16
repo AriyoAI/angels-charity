@@ -1,309 +1,530 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>فرشته‌ها | کمک به حیوانات بی‌پناه</title>
+<title>Angels Charity | Give Animals a Second Chance</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta name="description"
+content="Angels Charity helps animals in need through food, veterinary care, shelter and compassionate support.">
 
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: #081426;
-      color: #fff;
-      line-height: 1.8;
-    }
+<style>
 
-    header {
-      padding: 20px;
-      text-align: center;
-      background: #0d1d34;
-      border-bottom: 1px solid #263954;
-    }
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-    .logo {
-      font-size: 30px;
-      font-weight: bold;
-      color: #9be52b;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    .hero {
-      padding: 65px 20px;
-      text-align: center;
-      background:
-        linear-gradient(rgba(8,20,38,.75), rgba(8,20,38,.95)),
-        url("https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=80")
-        center/cover;
-    }
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#071321;
+color:#ffffff;
+line-height:1.7;
+}
 
-    .hero h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
+header{
+position:sticky;
+top:0;
+z-index:10;
+background:rgba(7,19,33,.95);
+border-bottom:1px solid #24364d;
+padding:15px 20px;
+}
 
-    .hero p {
-      max-width: 600px;
-      margin: auto;
-      font-size: 18px;
-      color: #dce5ef;
-    }
+.nav{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 28px;
-      border-radius: 30px;
-      background: #9be52b;
-      color: #081426;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 17px;
-    }
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#9be52b;
+}
 
-    section {
-      padding: 45px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.nav a{
+color:#dce5ef;
+text-decoration:none;
+margin-left:18px;
+font-size:14px;
+}
 
-    .title {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
+.hero{
+min-height:620px;
+display:flex;
+align-items:center;
+text-align:center;
+padding:70px 20px;
 
-    .title span {
-      color: #9be52b;
-    }
+background:
+linear-gradient(rgba(7,19,33,.62),rgba(7,19,33,.94)),
+url("https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1600&q=85")
+center/cover;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
+.hero-content{
+max-width:800px;
+margin:auto;
+}
 
-    .card {
-      background: #0d1d34;
-      border: 1px solid #263954;
-      border-radius: 18px;
-      overflow: hidden;
-    }
+.badge{
+display:inline-block;
+padding:7px 16px;
+border:1px solid #9be52b;
+border-radius:30px;
+color:#9be52b;
+font-size:14px;
+margin-bottom:20px;
+}
 
-    .card img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-    }
+.hero h1{
+font-size:48px;
+line-height:1.2;
+margin-bottom:20px;
+}
 
-    .card-content {
-      padding: 20px;
-    }
+.hero h1 span{
+color:#9be52b;
+}
 
-    .card h3 {
-      color: #9be52b;
-      margin-bottom: 8px;
-    }
+.hero p{
+font-size:19px;
+color:#e0e7ef;
+max-width:650px;
+margin:auto;
+}
 
-    .progress {
-      height: 9px;
-      background: #263954;
-      border-radius: 20px;
-      margin: 15px 0;
-      overflow: hidden;
-    }
+.btn{
+display:inline-block;
+margin-top:28px;
+padding:14px 30px;
+border-radius:30px;
+background:#9be52b;
+color:#071321;
+text-decoration:none;
+font-weight:bold;
+transition:.2s;
+}
 
-    .progress div {
-      height: 100%;
-      background: #9be52b;
-      width: 65%;
-    }
+.btn:hover{
+transform:translateY(-2px);
+}
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-      text-align: center;
-    }
+section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
 
-    .stat {
-      background: #0d1d34;
-      padding: 25px 10px;
-      border-radius: 15px;
-    }
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:12px;
+}
 
-    .stat strong {
-      display: block;
-      color: #9be52b;
-      font-size: 27px;
-    }
+.section-title span{
+color:#9be52b;
+}
 
-    .about {
-      background: #0d1d34;
-      border-radius: 20px;
-      padding: 30px;
-      text-align: center;
-    }
+.section-subtitle{
+text-align:center;
+color:#aebccc;
+max-width:650px;
+margin:0 auto 35px;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #050d19;
-      color: #9aa9ba;
-    }
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+}
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 30px;
-      }
+.card{
+background:#0d1d31;
+border:1px solid #263950;
+border-radius:20px;
+overflow:hidden;
+}
 
-      .stats {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:22px;
+}
+
+.card h3{
+color:#9be52b;
+font-size:22px;
+margin-bottom:8px;
+}
+
+.card p{
+color:#c5d0dc;
+}
+
+.status{
+display:inline-block;
+margin-top:15px;
+padding:6px 12px;
+border-radius:20px;
+background:#162b40;
+color:#9be52b;
+font-size:13px;
+}
+
+.mission{
+background:#0d1d31;
+border-radius:24px;
+text-align:center;
+padding:45px 25px;
+}
+
+.mission p{
+max-width:750px;
+margin:auto;
+color:#d1dbe5;
+font-size:18px;
+}
+
+.transparency{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+gap:18px;
+margin-top:30px;
+}
+
+.stat{
+background:#0d1d31;
+border:1px solid #263950;
+padding:25px;
+border-radius:18px;
+text-align:center;
+}
+
+.stat strong{
+display:block;
+font-size:28px;
+color:#9be52b;
+margin-bottom:5px;
+}
+
+.donate{
+text-align:center;
+background:
+linear-gradient(rgba(7,19,33,.85),rgba(7,19,33,.95)),
+url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=85")
+center/cover;
+border-radius:25px;
+}
+
+.amounts{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-top:25px;
+}
+
+.amount{
+padding:11px 20px;
+border:1px solid #41536a;
+border-radius:25px;
+color:#fff;
+}
+
+footer{
+background:#040b14;
+text-align:center;
+padding:40px 20px;
+color:#8292a5;
+}
+
+footer strong{
+color:#9be52b;
+}
+
+@media(max-width:650px){
+
+.nav a{
+display:none;
+}
+
+.hero{
+min-height:570px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:50px 18px;
+}
+
+.section-title{
+font-size:27px;
+}
+
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
-  <div class="logo">🪽 فرشته‌ها</div>
+
+<div class="nav">
+
+<div class="logo">🪽 Angels</div>
+
+<div>
+<a href="#animals">Animals</a>
+<a href="#mission">Mission</a>
+<a href="#transparency">Transparency</a>
+<a href="#donate">Donate</a>
+</div>
+
+</div>
+
 </header>
 
+
 <section class="hero">
-  <h1>گاهی یک فرشته، چهار پا دارد.</h1>
 
-  <p>
-    ما کنار حیواناتی هستیم که صدایی برای درخواست کمک ندارند.
-    با کمک شما می‌توانیم غذا، درمان و امنیت بیشتری برایشان فراهم کنیم.
-  </p>
+<div class="hero-content">
 
-  <a href="#animals" class="btn">❤️ کمک به یک فرشته</a>
+<div class="badge">🐾 Helping Animals in Need</div>
+
+<h1>
+Sometimes, an <span>angel</span> has four paws.
+</h1>
+
+<p>
+We stand beside animals who have no voice to ask for help.
+With compassion and community support, we can provide food,
+veterinary care, shelter and a safer life.
+</p>
+
+<a href="#animals" class="btn">
+❤️ Help an Animal
+</a>
+
+</div>
+
 </section>
 
-<section>
-  <h2 class="title">با کمک شما چه اتفاقی می‌افتد؟</h2>
-
-  <div class="stats">
-    <div class="stat">
-      <strong>۰</strong>
-      حیوان نجات‌یافته
-    </div>
-
-    <div class="stat">
-      <strong>€۰</strong>
-      کمک جمع‌آوری‌شده
-    </div>
-
-    <div class="stat">
-      <strong>۰</strong>
-      درمان انجام‌شده
-    </div>
-  </div>
-</section>
 
 <section id="animals">
 
-  <h2 class="title">🐾 <span>فرشته‌های</span> نیازمند کمک</h2>
+<h2 class="section-title">
+🐾 Animals Who <span>Need Help</span>
+</h2>
 
-  <div class="cards">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80">
-
-      <div class="card-content">
-        <h3>لئو 🐕</h3>
-
-        <p>
-          لئو برای درمان و ادامه زندگی به کمک شما نیاز دارد.
-        </p>
-
-        <div class="progress">
-          <div></div>
-        </div>
-
-        <p>هدف: €500 | جمع‌شده: €325</p>
-
-        <a href="#donate" class="btn">کمک به لئو ❤️</a>
-      </div>
-    </div>
+<p class="section-subtitle">
+Every animal has a story. Learn about animals in need
+and discover how compassionate people can help.
+</p>
 
 
-    <div class="card">
+<div class="cards">
 
-      <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=800&q=80">
 
-      <div class="card-content">
+<div class="card">
 
-        <h3>میلو 🐈</h3>
+<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85">
 
-        <p>
-          میلو برای غذا و مراقبت پزشکی به حمایت نیاز دارد.
-        </p>
+<div class="card-content">
 
-        <div class="progress">
-          <div style="width:40%"></div>
-        </div>
+<h3>Animals Waiting for Help</h3>
 
-        <p>هدف: €300 | جمع‌شده: €120</p>
+<p>
+This section will feature verified cases of animals
+who need food, medical care, shelter or rescue.
+</p>
 
-        <a href="#donate" class="btn">کمک به میلو ❤️</a>
+<span class="status">
+More cases coming soon
+</span>
 
-      </div>
-    </div>
+</div>
 
-  </div>
+</div>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=900&q=85">
+
+<div class="card-content">
+
+<h3>Every Life Matters</h3>
+
+<p>
+Our goal is to give vulnerable animals a better chance
+through responsible and transparent support.
+</p>
+
+<span class="status">
+Community support
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
 </section>
 
 
-<section>
+<section id="mission">
 
-  <div class="about">
+<div class="mission">
 
-    <h2 class="title">💚 چرا فرشته‌ها؟</h2>
+<h2 class="section-title">
+💚 Our <span>Mission</span>
+</h2>
 
-    <p>
-      هدف ما ایجاد یک مسیر ساده و شفاف برای کمک به حیوانات بی‌پناه است.
-      هر کمک باید قابل پیگیری باشد و گزارش هزینه‌ها در اختیار حامیان قرار بگیرد.
-    </p>
+<p>
+Our mission is simple: to make it easier for people
+to help animals in need.
 
-  </div>
+We believe compassion should be combined with
+transparency, responsibility and accountability.
+
+Every verified donation and expense should be recorded
+so supporters can understand how their contribution is used.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="transparency">
+
+<h2 class="section-title">
+📊 <span>Transparency</span>
+</h2>
+
+<p class="section-subtitle">
+Verified financial information will be published here
+as the project begins receiving and distributing donations.
+</p>
+
+
+<div class="transparency">
+
+<div class="stat">
+<strong>€0</strong>
+Verified donations
+</div>
+
+<div class="stat">
+<strong>€0</strong>
+Medical care
+</div>
+
+<div class="stat">
+<strong>€0</strong>
+Food & supplies
+</div>
+
+<div class="stat">
+<strong>€0</strong>
+Other expenses
+</div>
+
+</div>
 
 </section>
 
 
 <section id="donate">
 
-  <h2 class="title">❤️ همین حالا <span>کمک کن</span></h2>
+<div class="donate">
 
-  <div class="about">
+<h2 class="section-title">
+❤️ Support an <span>Animal</span>
+</h2>
 
-    <p>
-      در نسخه فعلی این بخش نمایشی است.
-      بعداً سیستم پرداخت واقعی را به آن متصل می‌کنیم.
-    </p>
+<p>
+Your kindness can help provide food, veterinary care
+and essential support to animals in need.
+</p>
 
-    <a href="#" class="btn">
-      💚 مبلغ دلخواه من
-    </a>
+<div class="amounts">
 
-  </div>
+<div class="amount">€5</div>
+<div class="amount">€10</div>
+<div class="amount">€25</div>
+<div class="amount">€50</div>
+
+</div>
+
+<a href="#" class="btn">
+💚 Donation System Coming Soon
+</a>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="mission">
+
+<h2 class="section-title">
+🪽 One Life at a Time
+</h2>
+
+<p>
+One animal. One act of kindness.
+One second chance.
+
+Together, we can build a community
+that cares for those who cannot speak for themselves.
+</p>
+
+</div>
 
 </section>
 
 
 <footer>
 
-  🪽 فرشته‌ها | برای کسانی که صدایشان شنیده نمی‌شود
+<p>
+<strong>🪽 Angels Charity</strong>
+</p>
 
-  <br><br>
+<p>
+For those whose voices cannot be heard.
+</p>
 
-  © 2026 Angels Charity
+<p>
+© 2026 Angels Charity
+</p>
 
 </footer>
 
