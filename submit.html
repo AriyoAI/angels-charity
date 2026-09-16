@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Angels Charity | Submit an Animal Case</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#071321;
+  color:white;
+  line-height:1.7;
+}
+
+header{
+  padding:18px 20px;
+  background:#0d1d31;
+  border-bottom:1px solid #263950;
+}
+
+.nav{
+  max-width:900px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#9be52b;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.back{
+  color:#dce5ef;
+  text-decoration:none;
+}
+
+main{
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.hero{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.hero h1{
+  font-size:42px;
+  line-height:1.2;
+  margin-bottom:15px;
+}
+
+.hero h1 span{
+  color:#9be52b;
+}
+
+.hero p{
+  color:#c6d1dc;
+  max-width:700px;
+  margin:auto;
+  font-size:17px;
+}
+
+.box{
+  background:#0d1d31;
+  border:1px solid #263950;
+  border-radius:22px;
+  padding:28px;
+  margin-bottom:22px;
+}
+
+.box h2{
+  margin-bottom:18px;
+}
+
+.box h2 span{
+  color:#9be52b;
+}
+
+label{
+  display:block;
+  margin-top:18px;
+  margin-bottom:7px;
+  font-weight:bold;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #354b63;
+  background:#13253a;
+  color:white;
+  font-size:16px;
+}
+
+textarea{
+  min-height:140px;
+  resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  outline:none;
+  border-color:#9be52b;
+}
+
+.notice{
+  margin-top:15px;
+  padding:18px;
+  background:#13253a;
+  border-left:4px solid #9be52b;
+  border-radius:12px;
+  color:#c6d1dc;
+}
+
+.check{
+  margin-top:20px;
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+
+.check input{
+  width:auto;
+  margin-top:6px;
+}
+
+.btn{
+  width:100%;
+  margin-top:25px;
+  padding:15px;
+  border:none;
+  border-radius:30px;
+  background:#9be52b;
+  color:#071321;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.small{
+  color:#8292a5;
+  font-size:13px;
+  margin-top:15px;
+}
+
+footer{
+  margin-top:30px;
+  padding:35px 20px;
+  text-align:center;
+  background:#040b14;
+  color:#8292a5;
+}
+
+@media(max-width:700px){
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .nav{
+    gap:15px;
+  }
+
+  .back{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">🪽 Angels</div>
+
+<a class="back" href="index.html">
+← Back to Home
+</a>
+
+</div>
+
+</header>
+
+
+<main>
+
+<div class="hero">
+
+<h1>
+Submit an <span>Animal Case</span> 🐾
+</h1>
+
+<p>
+Know an animal that genuinely needs help?
+Send us the information for review.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+🔎 Case <span>Information</span>
+</h2>
+
+<form>
+
+<label for="animalName">
+Animal Name
+</label>
+
+<input
+type="text"
+id="animalName"
+name="animalName"
+placeholder="Example: Max"
+>
+
+
+<label for="animalType">
+Animal Type
+</label>
+
+<select id="animalType" name="animalType">
+
+<option value="">
+Select animal type
+</option>
+
+<option>Dog</option>
+<option>Cat</option>
+<option>Bird</option>
+<option>Horse</option>
+<option>Wildlife</option>
+<option>Other</option>
+
+</select>
+
+
+<label for="location">
+Location
+</label>
+
+<input
+type="text"
+id="location"
+name="location"
+placeholder="City / Country"
+>
+
+
+<label for="story">
+Animal Story
+</label>
+
+<textarea
+id="story"
+name="story"
+placeholder="Please describe what happened and why the animal needs help."
+></textarea>
+
+
+<label for="situation">
+Current Situation
+</label>
+
+<textarea
+id="situation"
+name="situation"
+placeholder="Where is the animal now? Who is caring for it?"
+></textarea>
+
+
+<label for="help">
+Help Needed
+</label>
+
+<textarea
+id="help"
+name="help"
+placeholder="Describe the type of support that may be needed."
+></textarea>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+👤 Your <span>Information</span>
+</h2>
+
+<label for="name">
+Your Name
+</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Your full name"
+>
+
+
+<label for="organization">
+Organization / Shelter
+</label>
+
+<input
+type="text"
+id="organization"
+name="organization"
+placeholder="Optional"
+>
+
+
+<label for="email">
+Email
+</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="your@email.com"
+>
+
+
+<label for="photo">
+Photo or Evidence Link
+</label>
+
+<input
+type="url"
+id="photo"
+name="photo"
+placeholder="https://..."
+>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+📋 <span>Important</span>
+</h2>
+
+<div class="notice">
+
+Submitting a case does not guarantee publication,
+verification, funding or financial assistance.
+
+Every case must be reviewed before it can appear
+as a verified case on Angels.
+
+Please do not submit bank account details,
+passwords or other sensitive financial information.
+
+</div>
+
+
+<div class="check">
+
+<input
+type="checkbox"
+id="accurate"
+required
+>
+
+<label for="accurate">
+I confirm that the information I have provided
+is accurate to the best of my knowledge.
+</label>
+
+</div>
+
+
+<div class="check">
+
+<input
+type="checkbox"
+id="permission"
+>
+
+<label for="permission">
+I understand that Angels may contact me to verify
+the information provided.
+</label>
+
+</div>
+
+
+<button
+type="submit"
+class="btn"
+>
+🐾 Submit Case for Review
+</button>
+
+<p class="small">
+Angels currently uses this page as a submission prototype.
+No payment is requested through this form.
+</p>
+
+</form>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<strong>🪽 Angels Charity</strong>
+
+<br>
+
+For those whose voices cannot be heard.
+
+<br><br>
+
+Building trust through transparency and responsible action.
+
+<br><br>
+
+© 2026 Angels Charity
+
+</footer>
+
+</body>
+</html>
