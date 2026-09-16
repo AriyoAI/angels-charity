@@ -72,11 +72,22 @@ header{
 
 .btn{
   display:inline-block;
-  margin-top:25px;
+  margin:12px 6px 0;
   padding:14px 28px;
   border-radius:30px;
   background:#9be52b;
   color:#071321;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-outline{
+  display:inline-block;
+  margin:12px 6px 0;
+  padding:13px 27px;
+  border-radius:30px;
+  border:1px solid #9be52b;
+  color:#9be52b;
   text-decoration:none;
   font-weight:bold;
 }
@@ -198,6 +209,13 @@ footer{
   .cards{
     grid-template-columns:1fr;
   }
+
+  .btn,
+  .btn-outline{
+    display:block;
+    margin:12px auto;
+    max-width:320px;
+  }
 }
 </style>
 </head>
@@ -205,6 +223,7 @@ footer{
 <body>
 
 <header>
+
 <div class="nav">
 
 <div class="logo">🪽 Angels</div>
@@ -215,6 +234,7 @@ footer{
 </div>
 
 </div>
+
 </header>
 
 
@@ -233,6 +253,10 @@ and a second chance.
 
 <a href="#animals" class="btn">
 🐾 Meet the Animals
+</a>
+
+<a href="submit.html" class="btn-outline">
+🐾 Submit an Animal Case
 </a>
 
 </section>
@@ -360,6 +384,10 @@ Until verified cases are available, you can help by
 sharing Angels, supporting trusted animal welfare
 organizations and helping us spread awareness.
 </p>
+
+<a href="submit.html" class="btn-outline">
+🐾 Submit a Case for Review
+</a>
 
 </div>
 
