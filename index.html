@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Angels Charity | Animal Profile</title>
+<title>Angels Charity | Helping Animals</title>
 
 <style>
 *{
@@ -40,7 +40,7 @@ header{
   font-weight:bold;
 }
 
-.back{
+.nav a{
   color:#dce5ef;
   text-decoration:none;
 }
@@ -48,52 +48,92 @@ header{
 .hero{
   max-width:1050px;
   margin:auto;
-  padding:45px 20px;
+  padding:70px 20px;
+  text-align:center;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-  align-items:center;
-}
-
-.hero img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  border-radius:25px;
-}
-
-.badge{
-  display:inline-block;
-  padding:6px 14px;
-  border:1px solid #9be52b;
-  border-radius:25px;
-  color:#9be52b;
-  font-size:13px;
-  margin-bottom:15px;
-}
-
-h1{
-  font-size:45px;
+.hero h1{
+  font-size:48px;
   line-height:1.2;
-  margin-bottom:15px;
+  margin-bottom:20px;
 }
 
-h1 span{
+.hero h1 span{
   color:#9be52b;
 }
 
-.intro{
+.hero p{
+  max-width:700px;
+  margin:auto;
   color:#c6d1dc;
-  font-size:18px;
+  font-size:19px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 28px;
+  border-radius:30px;
+  background:#9be52b;
+  color:#071321;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 section{
   max-width:1050px;
   margin:auto;
-  padding:30px 20px;
+  padding:35px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.section-title span{
+  color:#9be52b;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.card{
+  background:#0d1d31;
+  border:1px solid #263950;
+  border-radius:22px;
+  padding:25px;
+}
+
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:16px;
+  margin-bottom:18px;
+}
+
+.card h3{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#c6d1dc;
+}
+
+.profile-btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:11px 20px;
+  border:1px solid #9be52b;
+  border-radius:25px;
+  color:#9be52b;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 .box{
@@ -104,54 +144,25 @@ section{
   margin-bottom:20px;
 }
 
-h2{
+.box h2{
   margin-bottom:12px;
 }
 
-h2 span{
+.box h2 span{
   color:#9be52b;
 }
 
-p{
+.box p{
   color:#c6d1dc;
 }
 
-.details{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
-  margin-top:20px;
-}
-
-.detail{
-  background:#13253a;
-  padding:18px;
-  border-radius:15px;
-}
-
-.detail strong{
-  display:block;
-  color:#9be52b;
-  margin-bottom:4px;
-}
-
 .notice{
-  border-right:4px solid #9be52b;
-  background:#13253a;
+  margin-top:18px;
   padding:18px;
+  background:#13253a;
+  border-left:4px solid #9be52b;
   border-radius:12px;
-  margin-top:20px;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:22px;
-  padding:14px 28px;
-  border-radius:30px;
-  background:#9be52b;
-  color:#071321;
-  text-decoration:none;
-  font-weight:bold;
+  color:#c6d1dc;
 }
 
 footer{
@@ -164,19 +175,15 @@ footer{
 
 @media(max-width:700px){
 
-  .hero-grid{
-    grid-template-columns:1fr;
+  .hero{
+    padding:50px 20px;
   }
 
-  .hero img{
-    height:300px;
+  .hero h1{
+    font-size:36px;
   }
 
-  h1{
-    font-size:34px;
-  }
-
-  .details{
+  .cards{
     grid-template-columns:1fr;
   }
 }
@@ -186,95 +193,114 @@ footer{
 <body>
 
 <header>
-
 <div class="nav">
-
 <div class="logo">🪽 Angels</div>
-
-<a class="back" href="index.html">
-← Back to Home
-</a>
-
+<a href="#animals">Animals</a>
 </div>
-
 </header>
-
 
 <main>
 
-<div class="hero">
+<section class="hero">
 
-<div class="hero-grid">
+<h1>
+Sometimes, an <span>angel</span> has four paws.
+</h1>
+
+<p>
+We stand beside animals who need help, protection
+and a second chance.
+</p>
+
+<a href="#animals" class="btn">
+🐾 Meet the Animals
+</a>
+
+</section>
+
+
+<section id="animals">
+
+<div class="section-title">
+<h2>🐾 Animals Who Need <span>Help</span></h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 <img
 src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1000&q=85"
-alt="Dog waiting for help">
+alt="Leo">
 
-<div>
+<h3>Leo 🐕</h3>
 
-<div class="badge">
-DEMO PROFILE
-</div>
-
-<h1>
-Meet <span>Leo</span> 🐕
-</h1>
-
-<p class="intro">
-Leo's profile is currently a demonstration of how
-future verified animal cases will appear on Angels.
+<p>
+Leo's page is currently a demonstration
+of how verified animal cases will appear.
 </p>
 
-<a href="#help" class="btn">
-❤️ Help This Animal
+<a href="leo.html" class="profile-btn">
+View Leo's Profile →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=1000&q=85"
+alt="Milo">
+
+<h3>Milo 🐈</h3>
+
+<p>
+Milo's page is currently a demonstration
+of how verified animal cases will appear.
+</p>
+
+<a href="milo.html" class="profile-btn">
+View Milo's Profile →
 </a>
 
 </div>
 
 </div>
 
-</div>
+</section>
 
 
 <section>
 
 <div class="box">
 
-<h2>
-🐾 Leo's <span>Story</span>
-</h2>
+<h2>🪽 Our <span>Mission</span></h2>
 
 <p>
-This is a demonstration profile.
-
-When Angels begins publishing verified cases,
-each profile will contain the animal's real story,
-current needs, veterinary information and
-support requirements.
+Our mission is simple: to make it easier for people
+to help animals in need while building trust through
+transparency and responsible action.
 </p>
 
-<div class="details">
-
-<div class="detail">
-<strong>Status</strong>
-Demo profile
 </div>
 
-<div class="detail">
-<strong>Location</strong>
-To be verified
-</div>
 
-<div class="detail">
-<strong>Medical condition</strong>
-To be verified
-</div>
+<div class="box">
 
-<div class="detail">
-<strong>Support needed</strong>
-To be verified
-</div>
+<h2>📋 <span>Transparency</span></h2>
 
+<p>
+Every verified case should provide clear information
+about the animal, the situation, the support required
+and, when donations become available, how funds are used.
+</p>
+
+<div class="notice">
+<strong>Current status:</strong><br>
+Angels is currently preparing its verified animal
+case and donation system. No donation is currently
+being requested through this website.
 </div>
 
 </div>
@@ -282,42 +308,13 @@ To be verified
 
 <div class="box">
 
-<h2>
-📋 <span>Transparency</span>
-</h2>
+<h2>❤️ Support an <span>Animal</span></h2>
 
 <p>
-For every real case, we aim to provide supporting
-information wherever it can be safely and responsibly
-shared.
+Our donation system is currently being prepared.
+Once available, supporters will be able to choose
+how they would like to help verified cases.
 </p>
-
-<div class="notice">
-<strong>Important:</strong><br>
-This page is currently a demonstration.
-No donation should be sent based on the information
-shown on this page.
-</div>
-
-</div>
-
-
-<div class="box" id="help">
-
-<h2>
-❤️ How You Can <span>Help</span>
-</h2>
-
-<p>
-Once verified animal cases are available,
-supporters will be able to choose how they would
-like to help and view relevant donation and expense
-information.
-</p>
-
-<a href="index.html" class="btn">
-← Return to Angels
-</a>
 
 </div>
 
@@ -341,4 +338,4 @@ For those whose voices cannot be heard.
 </footer>
 
 </body>
-  </html>
+</html>
